@@ -1,0 +1,67 @@
+/* Estilos generales */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  text-align: center;
+}
+
+/* Título */
+.menu-title {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Botones */
+.menu-button {
+  width: 250px;
+  padding: 15px;
+  margin: 15px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #77dd77;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Efecto hover */
+.menu-button:hover {
+  transform: scale(1.1);
+  background-color: #42ab49;
+  box-shadow: 0px 4px 15px rgba(255, 153, 0, 0.5);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-container, .menu-title, .menu-button {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.menu-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para la imagen */
+.menu-logo:hover {
+  transform: scale(1.1);
+}
